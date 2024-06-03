@@ -1,4 +1,4 @@
-import logo from '../assets/logo.png'
+import logo from '../assets/logo-tmg.svg'
 import github from '../assets/github.svg'
 import twitter from '../assets/twitter.svg'
 import linkedin from '../assets/linkedin.svg'
