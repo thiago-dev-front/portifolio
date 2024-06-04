@@ -6,11 +6,11 @@ import linkedin from '../assets/linkedin.svg'
 function Menu() {
     return (
         <header className="bg-primary max-w-[1193px] h-[60px] mx-auto mt-8">
-            <div className='flex justify-center'>
+            <div className='flex justify-center px-5'>
                 <div className='flex-1'>
                     <img src={logo} alt="logo" />
                 </div>
-                <div className='mr-28'>
+                <div className='mr-28 hidden md:block ' >
                     <ul className='flex items-center gap-10  h-[60px] '>
                         <li className='text-secondary text-xl' >Home</li>
                         <li className='text-secondary text-xl'>About</li>
