@@ -5,7 +5,7 @@ import linkedin from '../assets/linkedin.svg'
 
 function Menu() {
     return (
-        <header className="bg-primary max-w-[1193px] h-[60px] mx-auto mt-8">
+        <header className="bg-primary h-[60px] mt-8">
             <div className='flex justify-center px-5'>
                 <div className='flex-1'>
                     <img src={logo} alt="logo" />

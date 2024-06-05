@@ -7,12 +7,12 @@ import Stacks from './components/Stacks';
 
 function App() {
   return (
-    <div>
+    <div className='max-w-[1193px] mx-auto'>
       <Menu />
-      {/* <Banner />
+       <Banner />
       <Stacks />
       <Projects />
-      <Footer /> */}
+      <Footer /> 
     </div>
 
   );
