@@ -3,6 +3,19 @@
 @tailwind utilities;
 
 
+
+.slick-list {
+  padding-bottom: 20px !important;
+}
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: white !important;
+  font-size: 10px !important;
+}
+.slick-dots li button:before {
+  color: white !important;
+  font-size: 10px !important;
+}
 .text-gradient:hover {
   background: linear-gradient(to right, #E70FAA, #00C0FD);
   -webkit-background-clip: text;
@@ -23,3 +36,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+

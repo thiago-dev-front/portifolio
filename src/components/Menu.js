@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { List, X } from 'phosphor-react';  // Ícones da Phosphor
 import logo from '../assets/logo-tmg.svg';
 import github from '../assets/github.svg';
 import twitter from '../assets/twitter.svg';
@@ -22,19 +21,19 @@ function Menu() {
                 <div className='hidden md:block mr-28'>
                     <ul className='flex items-center gap-10 h-[60px]'>
                         <li>
-                            <a className='text-secondary text-gradient text-xl' href='/'>Inicio</a>
+                            <a className='text-secondary hover:text-gradient text-xl' href='/'>Inicio</a>
                         </li>
                         <li>
-                            <a className='text-secondary text-gradient text-xl' href='/'>Sobre Mim</a>
+                            <a className='text-secondary hover:text-gradient text-xl' href='/'>Sobre Mim</a>
                         </li>
                         <li>
-                            <a className='text-secondary text-gradient text-xl' href='/'>Tecnologias</a>
+                            <a className='text-secondary hover:text-gradient text-xl' href='/'>Tecnologias</a>
                         </li>
                         <li>
-                            <a className='text-secondary text-gradient text-xl' href='/'>Projetos</a>
+                            <a className='text-secondary hover:text-gradient text-xl' href='/'>Projetos</a>
                         </li>
                         <li>
-                            <a className='text-secondary text-gradient text-xl' href='/'>Contato</a>
+                            <a className='text-secondary hover:text-gradient text-xl' href='/'>Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -53,7 +52,7 @@ function Menu() {
                 </div>
                 <div className='md:hidden flex items-center'>
                     <button onClick={toggleMenu} className="text-secondary">
-                        <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} style={{ fontSize: '28px' }} />
+                        {isMenuOpen ? <X size={28} /> : <List size={28} />}
                     </button>
                 </div>
             </div>
@@ -84,10 +83,9 @@ function Menu() {
                         </div>
                     </div>
                 </>
-
             )}
         </header>
-    )
+    );
 }
 
 export default Menu;

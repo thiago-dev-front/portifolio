@@ -6,7 +6,7 @@ import github from '../assets/icon-github.svg'
 function Card() {
     return (
         <>
-            <div className='w-full max-w-[372px] lg:w-[320px]  xl:w-[372px] placeholder:h-[567px] '>
+            <div className='w-full max-w-[372px] lg:w-[320px]  xl:w-[372px] placeholder:h-[567px] cursor-pointer '>
                 <div className='rounded-t-[20px]'>
                     <img src={logo} alt='Logo' />
                 </div>
