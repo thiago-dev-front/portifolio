@@ -10,7 +10,7 @@ function Footer() {
                 <div className='flex-1'>
                     <img src={logoFooter} alt='Footer' />
                 </div>
-                <div className='space-x-10 mr-0 md:mr-20 text-center'>
+                <div className='space-x-10 mr-0 md:mr-20 text-center flex-col md:flex'>
                     <span className='text-secondary text-xl block'>(11) 96809-8975</span>
                     <span className='text-secondary text-xl block'>thiagodiogenes@yahoo.com.br</span>
                 </div>
