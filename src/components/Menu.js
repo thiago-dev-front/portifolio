@@ -21,19 +21,19 @@ function Menu() {
                 <div className='hidden md:block mr-28'>
                     <ul className='flex items-center gap-10 h-[60px]'>
                         <li>
-                            <a className='text-secondary hover:text-gradient text-xl' href='/'>Inicio</a>
+                            <a className='text-secondary text-gradient text-xl' href='/'>Inicio</a>
                         </li>
                         <li>
-                            <a className='text-secondary hover:text-gradient text-xl' href='/'>Sobre Mim</a>
+                            <a className='text-secondary text-gradient text-xl' href='/'>Sobre Mim</a>
                         </li>
                         <li>
-                            <a className='text-secondary hover:text-gradient text-xl' href='/'>Tecnologias</a>
+                            <a className='text-secondary text-gradient text-xl' href='/'>Tecnologias</a>
                         </li>
                         <li>
-                            <a className='text-secondary hover:text-gradient text-xl' href='/'>Projetos</a>
+                            <a className='text-secondary text-gradient text-xl' href='/'>Projetos</a>
                         </li>
                         <li>
-                            <a className='text-secondary hover:text-gradient text-xl' href='/'>Contato</a>
+                            <a className='text-secondary text-gradient text-xl' href='/'>Contato</a>
                         </li>
                     </ul>
                 </div>
