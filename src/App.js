@@ -1,18 +1,34 @@
 import './App.css';
-import Banner from './components/Banner';
-import Footer from './components/Footer';
-import Menu from './components/Menu';
-import Projects from './components/Projects';
-import Stacks from './components/Stacks';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Layout from './components/Layout';
+import Home from './components/Home';
+import SobreMim from './pages/SobreMim';
+import Tecnologias from './pages/Tecnologias';
+import Projetos from './pages/Projetos';
+import Contato from './pages/Contato';
 
 function App() {
   return (
     <div className='container xl:max-w-[1193px] mx-auto'>
-      <Menu />
-      <Banner />
-      <Stacks />
-      <Projects />
-      <Footer />
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout/>}>
+          <Route index element={<Home/>} />
+          <Route path='about' element={<SobreMim/>} />
+          <Route path='tecnologias' element={<Tecnologias/>} />
+          <Route path='projetos' element={<Projetos/>} />
+          <Route path='contato' element={<Contato/>} />
+
+
+        
+          
+        </Route>
+      </Routes>
+    </BrowserRouter>
     </div>
 
   );
