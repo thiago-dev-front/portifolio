@@ -4,6 +4,8 @@ import logo from '../assets/logo-tmg.svg';
 import github from '../assets/github.svg';
 import twitter from '../assets/twitter.svg';
 import linkedin from '../assets/linkedin.svg';
+import { Link} from 'react-router-dom';
+
 
 function Menu() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,20 +23,23 @@ function Menu() {
                 <div className='hidden md:block mr-28'>
                     <ul className='flex items-center gap-10 h-[60px]'>
                         <li>
-                            <a className='text-secondary text-gradient text-xl' href='/'>Inicio</a>
+                            <Link className='text-secondary text-gradient text-xl' to="/">Inicio</Link>
+
                         </li>
                         <li>
-                            <a className='text-secondary text-gradient text-xl' href='/'>Sobre Mim</a>
+                        <Link className='text-secondary text-gradient text-xl' to="/about">Sobre Mim</Link>
                         </li>
                         <li>
-                            <a className='text-secondary text-gradient text-xl' href='/'>Tecnologias</a>
+                        <Link className='text-secondary text-gradient text-xl' to="/tecnologias">Tecnologias</Link>
                         </li>
                         <li>
-                            <a className='text-secondary text-gradient text-xl' href='/'>Projetos</a>
+                        <Link className='text-secondary text-gradient text-xl' to="/projetos">Projetos</Link>
                         </li>
                         <li>
-                            <a className='text-secondary text-gradient text-xl' href='/'>Contato</a>
+                        <Link className='text-secondary text-gradient text-xl' to="/contato">Contato</Link>
+
                         </li>
+                        
                     </ul>
                 </div>
                 <div className='hidden md:block'>
@@ -61,11 +66,22 @@ function Menu() {
                     <div className='relative z-10 bg-primary pb-6'>
                         <div className='md:hidden'>
                             <ul className='flex flex-col items-center gap-6 mt-4'>
-                                <li className='text-secondary text-xl'>Início</li>
-                                <li className='text-secondary text-xl'>Sobre Mim</li>
-                                <li className='text-secondary text-xl'>Tecnologias</li>
-                                <li className='text-secondary text-xl'>Projetos</li>
-                                <li className='text-secondary text-xl'>Contato</li>
+                                <li className='text-secondary text-xl'>
+                                <Link className='text-secondary text-gradient text-xl' to="/">Inicio</Link>
+
+                                </li>
+                                <li className='text-secondary text-xl'>
+                                <Link className='text-secondary text-gradient text-xl' to="/about">Sobre Mim</Link>
+                                </li>
+                                <li className='text-secondary text-xl'>
+                                <Link className='text-secondary text-gradient text-xl' to="/tecnologias">Tecnologias</Link>
+                                </li>
+                                <li className='text-secondary text-xl'>
+                                <Link className='text-secondary text-gradient text-xl' to="/projetos">Projetos</Link>
+                                </li>
+                                <li className='text-secondary text-xl'>
+                                <Link className='text-secondary text-gradient text-xl' to="/contato">Contato</Link>
+                                </li>
                             </ul>
                         </div>
                         <div className='md:hidden'>

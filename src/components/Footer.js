@@ -2,6 +2,8 @@ import logoFooter from '../assets/logo-footer.svg'
 import github from '../assets/github.svg';
 import twitter from '../assets/twitter.svg';
 import linkedin from '../assets/linkedin.svg';
+import { Link} from 'react-router-dom';
+
 
 function Footer() {
     return (
@@ -35,19 +37,19 @@ function Footer() {
                 <nav>
                     <ul className='flex  flex-col md:flex-row items-center gap-5'>
                         <li>
-                            <a className='text-secondary text-gradient text-xl' href='/'>Inicio</a>
+                        <Link className='text-secondary text-gradient text-xl' to="/">Inicio</Link>
                         </li>
                         <li>
-                            <a className='text-secondary text-gradient text-xl' href='/'>Sobre Mim</a>
+                        <Link className='text-secondary text-gradient text-xl' to="/about">Sobre Mim</Link>
                         </li>
                         <li>
-                            <a className='text-secondary text-gradient text-xl' href='/'>Tecnologias</a>
+                        <Link className='text-secondary text-gradient text-xl' to="/tecnologias">Tecnologias</Link>
                         </li>
                         <li>
-                            <a className='text-secondary text-gradient text-xl' href='/'>Projetos</a>
+                        <Link className='text-secondary text-gradient text-xl' to="/projetos">Projetos</Link>
                         </li>
                         <li>
-                            <a className='text-secondary text-gradient text-xl' href='/'>Contato</a>
+                        <Link className='text-secondary text-gradient text-xl' to="/contato">Contato</Link>
                         </li>
                     </ul>
                 </nav>
