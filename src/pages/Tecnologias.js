@@ -1,6 +1,8 @@
+import Stacks from "../components/Stacks"
+
 function Tecnologias() {
     return (
-       <h1>Tecnologias</h1>
+        <Stacks />
     )
 }
 export default Tecnologias

@@ -2,7 +2,7 @@ import logoFooter from '../assets/logo-footer.svg'
 import github from '../assets/github.svg';
 import twitter from '../assets/twitter.svg';
 import linkedin from '../assets/linkedin.svg';
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 function Footer() {
@@ -12,7 +12,7 @@ function Footer() {
                 <div className='flex-1'>
                     <img src={logoFooter} alt='Footer' />
                 </div>
-                <div className='space-x-10 mr-0 md:mr-20 text-center flex-col md:flex'>
+                <div className='space-x-10 mr-0 md:mr-20 text-center flex-col md:flex-row md:flex'>
                     <span className='text-secondary text-xl block'>(11) 96809-8975</span>
                     <span className='text-secondary text-xl block'>thiagodiogenes@yahoo.com.br</span>
                 </div>
@@ -37,19 +37,19 @@ function Footer() {
                 <nav>
                     <ul className='flex  flex-col md:flex-row items-center gap-5'>
                         <li>
-                        <Link className='text-secondary text-gradient text-xl' to="/">Inicio</Link>
+                            <Link className='text-secondary text-gradient text-xl' to="/">Inicio</Link>
                         </li>
                         <li>
-                        <Link className='text-secondary text-gradient text-xl' to="/about">Sobre Mim</Link>
+                            <Link className='text-secondary text-gradient text-xl' to="/about">Sobre Mim</Link>
                         </li>
                         <li>
-                        <Link className='text-secondary text-gradient text-xl' to="/tecnologias">Tecnologias</Link>
+                            <Link className='text-secondary text-gradient text-xl' to="/tecnologias">Tecnologias</Link>
                         </li>
                         <li>
-                        <Link className='text-secondary text-gradient text-xl' to="/projetos">Projetos</Link>
+                            <Link className='text-secondary text-gradient text-xl' to="/projetos">Projetos</Link>
                         </li>
                         <li>
-                        <Link className='text-secondary text-gradient text-xl' to="/contato">Contato</Link>
+                            <Link className='text-secondary text-gradient text-xl' to="/contato">Contato</Link>
                         </li>
                     </ul>
                 </nav>
