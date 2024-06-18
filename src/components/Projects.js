@@ -3,9 +3,64 @@ import Slider from 'react-slick';
 import Card from './Card';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import logo from '../assets/icon-portifolio.png'
+import preview from '../assets/icon-preview.svg'
+import github from '../assets/icon-github.svg'
 
 
 function Projects() {
+    const data = [
+        {
+            logo: logo,
+            title: 'Project 1',
+            description: 'Description for project 1',
+            techStack: ['HTML', 'JavaScript', 'SASS', 'React'],
+            preview: preview,
+            github: github,
+        },
+        {
+            logo: logo,
+            title: 'Project 1',
+            description: 'Description for project 1',
+            techStack: ['HTML', 'JavaScript', 'SASS', 'React'],
+            preview: preview,
+            github: github,
+        },
+        {
+            logo: logo,
+            title: 'Project 1',
+            description: 'Description for project 1',
+            techStack: ['HTML', 'JavaScript', 'SASS', 'React'],
+            preview: preview,
+            github: github,
+        },
+        {
+            logo: logo,
+            title: 'Project 1',
+            description: 'Description for project 1',
+            techStack: ['HTML', 'JavaScript', 'SASS', 'React'],
+            preview: preview,
+            github: github,
+        },
+        {
+            logo: logo,
+            title: 'Project 1',
+            description: 'Description for project 1',
+            techStack: ['HTML', 'JavaScript', 'SASS', 'React'],
+            preview: preview,
+            github: github,
+        },
+        {
+            logo: logo,
+            title: 'Project 1',
+            description: 'Description for project 1',
+            techStack: ['HTML', 'JavaScript', 'SASS', 'React'],
+            preview: preview,
+            github: github,
+        },
+
+    ];
+
     const settings = {
         dots: true,
         infinite: true,
@@ -70,24 +125,17 @@ function Projects() {
 
             <div className='mx-6 md:mx-0 '>
                 <Slider {...settings}>
-                    <div>
-                        <Card />
-                    </div>
-                    <div>
-                        <Card />
-                    </div>
-                    <div>
-                        <Card />
-                    </div>
-                    <div>
-                        <Card />
-                    </div>
-                    <div>
-                        <Card />
-                    </div>
-                    <div>
-                        <Card />
-                    </div>
+                    {data.map((card, index) => (
+                        <Card
+                            key={index}
+                            logo={card.logo}
+                            title={card.title}
+                            description={card.description}
+                            techStack={card.techStack}
+                            preview={card.preview}
+                            github={card.github}
+                        />
+                    ))}
                 </Slider>
             </div>
         </section>
