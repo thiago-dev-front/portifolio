@@ -1,5 +1,6 @@
 
-function Card({ logo, title, description, techStack, preview, github }) {
+function Card({ logo, title, description, techStack, preview, github, barbara }) {
+
     return (
         <>
             <div className='w-full max-w-[372px] lg:w-[320px] xl:w-[372px] placeholder:h-[567px] cursor-pointer'>
@@ -11,7 +12,7 @@ function Card({ logo, title, description, techStack, preview, github }) {
                     <h3 className='text-2xl xl:text-[28px] font-medium text-darkMode'>{title}</h3>
                     <p className='text-darkMode text-base xl:text-lg my-3'>{description}</p>
 
-                    <p className='text-darkMode text-sm xl:text-lg'><span className='font-medium'>Tech stack</span> {techStack?.join(', ')}</p>
+                    <p className='text-darkMode text-sm xl:text-lg'><span className='font-medium'>Tech stack</span> {techStack}</p>
                     <div className='flex items-center justify-between mt-4 max-w-[300px]'>
                         <div className='flex gap-3'>
                             <img src={preview} alt="Preview" />
