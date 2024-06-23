@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { List, X } from 'phosphor-react';  // Ícones da Phosphor
-import logo from '../assets/logo-tmg.svg';
+import logo from '../assets/logo-dev.svg';
 import github from '../assets/github.svg';
 import twitter from '../assets/twitter.svg';
 import linkedin from '../assets/linkedin.svg';
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 function Menu() {
@@ -18,28 +18,20 @@ function Menu() {
         <header className="bg-primary h-[60px] mt-8">
             <div className='flex items-center justify-between px-5'>
                 <div className='flex-1'>
-                    <img src={logo} alt="logo" />
+                    <Link className='text-heading  text-xl' to="/">
+                        <img src={logo} alt="logo" />
+                    </Link>
+
                 </div>
                 <div className='hidden md:block mr-28'>
                     <ul className='flex items-center gap-10 h-[60px]'>
+
+
                         <li>
-                            <Link className='text-secondary text-gradient text-xl' to="/">Inicio</Link>
+                            <Link className='text-heading  text-xl' to="/contato">Contato</Link>
 
                         </li>
-                        <li>
-                        <Link className='text-secondary text-gradient text-xl' to="/about">Sobre Mim</Link>
-                        </li>
-                        <li>
-                        <Link className='text-secondary text-gradient text-xl' to="/tecnologias">Tecnologias</Link>
-                        </li>
-                        <li>
-                        <Link className='text-secondary text-gradient text-xl' to="/projetos">Projetos</Link>
-                        </li>
-                        <li>
-                        <Link className='text-secondary text-gradient text-xl' to="/contato">Contato</Link>
 
-                        </li>
-                        
                     </ul>
                 </div>
                 <div className='hidden md:block'>
@@ -67,20 +59,20 @@ function Menu() {
                         <div className='md:hidden'>
                             <ul className='flex flex-col items-center gap-6 mt-4'>
                                 <li className='text-secondary text-xl'>
-                                <Link className='text-secondary text-gradient text-xl' to="/">Inicio</Link>
+                                    <Link className='text-secondary text-gradient text-xl' to="/">Inicio</Link>
 
                                 </li>
                                 <li className='text-secondary text-xl'>
-                                <Link className='text-secondary text-gradient text-xl' to="/about">Sobre Mim</Link>
+                                    <Link className='text-secondary text-gradient text-xl' to="/about">Sobre Mim</Link>
                                 </li>
                                 <li className='text-secondary text-xl'>
-                                <Link className='text-secondary text-gradient text-xl' to="/tecnologias">Tecnologias</Link>
+                                    <Link className='text-secondary text-gradient text-xl' to="/tecnologias">Tecnologias</Link>
                                 </li>
                                 <li className='text-secondary text-xl'>
-                                <Link className='text-secondary text-gradient text-xl' to="/projetos">Projetos</Link>
+                                    <Link className='text-secondary text-gradient text-xl' to="/projetos">Projetos</Link>
                                 </li>
                                 <li className='text-secondary text-xl'>
-                                <Link className='text-secondary text-gradient text-xl' to="/contato">Contato</Link>
+                                    <Link className='text-secondary text-gradient text-xl' to="/contato">Contato</Link>
                                 </li>
                             </ul>
                         </div>

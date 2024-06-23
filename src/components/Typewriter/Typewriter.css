@@ -1,0 +1,80 @@
+/* Screen sizes */
+:root {
+  --mobile-large: 512px;
+  --tablet: 768px;
+  --laptop: 992px;
+  --desktop: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  position: relative;
+  height: 65vh;
+  background: linear-gradient(270deg, #3182d5, #4e54c8);
+  text-align: center;
+  text-shadow: 1px 1px;
+  color: #fff;
+}
+
+@media (min-width: 512px) {
+  .banner {
+      height: 85vh;
+  }
+}
+
+.banner .image-overlay {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  opacity: 0.2;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.quote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 200%;
+  overflow: hidden;
+  width: 100vw;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.quote h1 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .quote h1 {
+      font-size: 3rem;
+  }
+}
+
+/* Typewriter styles */
+.typewriter {
+  color: var(--color);
+}
+
+.typewriter .separator {
+  color: var(--color);
+  animation: blinkTextCursor 0.5s infinite;
+}
+
+@keyframes blinkTextCursor {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}

@@ -1,13 +1,18 @@
 import Banner from "./Banner"
-import Projects from "./Projects"
-import Stacks from "./Stacks"
+import Experiences from "./Experiences";
+
+
+
+import Projects from "./Projects";
+
+
 
 function Home() {
     return (
-        <div> 
-        <Banner/>
-        <Stacks/>
-        <Projects/>
+        <div>
+            <Banner />
+            <Projects />
+            <Experiences />
         </div>
     )
 }
