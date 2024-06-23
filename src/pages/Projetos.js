@@ -2,7 +2,6 @@ import Card from "../components/Card"
 import logo from '../assets/icon-portifolio.png'
 import preview from '../assets/icon-preview.svg'
 import github from '../assets/icon-github.svg'
-import Teste from "../components/Teste";
 
 function Projetos() {
     const data = [
@@ -84,10 +83,6 @@ function Projetos() {
         <>
             <div>
                 <h1 className="text-white text-4xl">Teste</h1>
-                <Teste
-                    mensagem='Testando'
-                    texto='nusahdudwd'
-                    informacao='xuxu' />
             </div>
             <div>
                 {data.map((card, index) => (

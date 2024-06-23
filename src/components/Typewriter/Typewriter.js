@@ -78,7 +78,7 @@ const Typewriter = ({ typingSpeed, isInfinite, sentences, separator = '|', color
     }, []);
 
     return (
-        <span className="text-heading font-bold text-[32px] md:text-[58px]">
+        <span className="text-heading font-semibold text-[32px] md:text-[58px]">
             {subText}
             <span className="separator">{separator}</span>
         </span>

@@ -23,12 +23,13 @@ function Menu() {
                     </Link>
 
                 </div>
-                <div className='hidden md:block mr-28'>
+                <div className='hidden md:block mr-20'>
                     <ul className='flex items-center gap-10 h-[60px]'>
 
 
                         <li>
-                            <Link className='text-heading  text-xl' to="/contato">Contato</Link>
+
+                            <Link className='text-secondary font-medium   text-xl' to="/contato">Contato</Link>
 
                         </li>
 
