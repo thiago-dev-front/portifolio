@@ -5,7 +5,10 @@ function AboutMe() {
         <>
             <div className="flex flex-col md:flex-row items-center justify-around my-20">
                 <div className="flex justify-center items-center mb-6 md:mb-0">
-                    <img className="w-[300px] h-[300px] rounded-full object-cover border-4 border-white" src={banner} alt="Thiago" />
+                    <img className="w-[300px] h-[300px] rounded-full object-cover " src={banner} alt="Thiago" style={{
+                        background: "linear-gradient(to right, #E70FAA, #00C0FD)",
+                        padding: "4px", // Espessura da borda
+                    }} />
                 </div>
                 <div className="max-w-[600px] px-4 md:px-0">
                     <p className="text-white font-normal text-[18px] text-justify">

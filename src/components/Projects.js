@@ -56,7 +56,7 @@ function Projects() {
 
 
     return (
-        <section className='mb-12'>
+        <section className='mb-12 overflow-hidden'>
             <div className='text-center space-y-4 mt-32 mx-3 md:mx-0 mb-12'>
                 <h2 className='text-secondary font-bold text-5xl'>Projetos</h2>
                 {/* <p className='text-secondary text-[32px]'>Alguns projetos que construí até o momento</p> */}

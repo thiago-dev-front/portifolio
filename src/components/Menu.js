@@ -59,19 +59,7 @@ function Menu() {
                     <div className='relative z-10 bg-primary pb-6'>
                         <div className='md:hidden'>
                             <ul className='flex flex-col items-center gap-6 mt-4'>
-                                <li className='text-secondary text-xl'>
-                                    <Link className='text-secondary text-gradient text-xl' to="/">Inicio</Link>
 
-                                </li>
-                                <li className='text-secondary text-xl'>
-                                    <Link className='text-secondary text-gradient text-xl' to="/about">Sobre Mim</Link>
-                                </li>
-                                <li className='text-secondary text-xl'>
-                                    <Link className='text-secondary text-gradient text-xl' to="/tecnologias">Tecnologias</Link>
-                                </li>
-                                <li className='text-secondary text-xl'>
-                                    <Link className='text-secondary text-gradient text-xl' to="/projetos">Projetos</Link>
-                                </li>
                                 <li className='text-secondary text-xl'>
                                     <Link className='text-secondary text-gradient text-xl' to="/contato">Contato</Link>
                                 </li>

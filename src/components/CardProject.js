@@ -18,7 +18,7 @@ function CardProject({ title, link, logoHeading, logoGit, text, technologies }) 
                     <div >
                         <p> {text}</p>
                     </div>
-                    <div className='flex items-center gap-3'>
+                    <div className='flex items-center flex-wrap md:flex-nowrap gap-3'>
                         {technologies.map((tech, index) => (
                             <Badge key={index} text={tech} />
                         ))}
