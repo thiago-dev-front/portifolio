@@ -37,13 +37,13 @@ function Menu() {
                 </div>
                 <div className='hidden md:block'>
                     <div className='flex items-center gap-6 '>
-                        <a href='/'>
+                        <a href='https://github.com/thiago-dev-front' target='_blank' rel="noreferrer">
                             <img src={github} alt="github" />
                         </a>
-                        <a href='/'>
+                        <a href='/' target='_blank' rel="noreferrer" >
                             <img src={twitter} alt="twitter" />
                         </a>
-                        <a href='/'>
+                        <a href='https://www.linkedin.com/in/thiago-di%C3%B3genes-18804291/' target='_blank' rel="noreferrer" >
                             <img src={linkedin} alt="linkedin" />
                         </a>
                     </div>
